@@ -13,24 +13,39 @@ body {
 .container {
     width: 80%;
     margin: auto;
+    overflow: hidden;
+}
+
+#navigation {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 #main-header {
+    top: 0;
+    overflow: hidden;
     background-color: var(--green-color);
 }
 
 #main-header h1 {
     color: white;
-    margin-top: 0;
 }
 
 #navbar {
+    top: 0;
     background-color: var(--grey-color);
 }
 
 #navbar ul {
+    list-style-type: none;
+    margin: 0;
     padding: 0;
-    list-style: none;
+    overflow: hidden;
+}
+
+li {
+    float: left;
 }
 
 #navbar li {
@@ -40,8 +55,23 @@ body {
 #navbar a {
     text-decoration: none;
     color: black;
-    font-size: 18px;
-    padding-right: 15px;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+#navbar a:hover {
+    background-color: var(--green-color);
+    color: white;
+}
+
+.main {
+    margin-top: 150px;
+}
+
+.active {
+    background-color: var(--green-color);
+    color: white !important;
 }
 
 #showcase h1 {
