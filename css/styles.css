@@ -1,0 +1,49 @@
+:root {
+    --green-color: #01723a;
+    --grey-color: #f1f1f1;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    background-image: url('../resources/background.png');
+    background-attachment: fixed;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+#main-header {
+    background-color: var(--green-color);
+}
+
+#main-header h1 {
+    color: white;
+    margin-top: 0;
+}
+
+#navbar {
+    background-color: var(--grey-color);
+}
+
+#navbar ul {
+    padding: 0;
+    list-style: none;
+}
+
+#navbar li {
+    display: inline;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding-right: 15px;
+}
+
+#showcase h1 {
+    font-size: 40px;
+}
