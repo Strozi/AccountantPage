@@ -151,6 +151,33 @@ section {
     margin: 20px 0;
 }
 
+#staff {
+    padding-top: 30px;
+}
+
 #staff h1 {
     font-size: 30px;
+}
+
+.card-wrapper {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card img {
+    max-width: 50%;
+    border-radius: 50%;
+}
+
+.card h3 {
+    color: var(--green-color);
+}
+
+.card p {
+    font-style: italic;
+}
+
+.card:hover {
+    opacity: 0.8;
 }
