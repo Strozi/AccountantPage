@@ -8,12 +8,25 @@ body {
     background-image: url('../resources/background.png');
     background-attachment: fixed;
     margin: 0;
+    text-align: center;
 }
 
 .container {
     width: 80%;
     margin: auto;
     overflow: hidden;
+}
+
+.btn {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--green-color);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border: var(--green-color) 2px solid;
+}
+
+.wrapper {
+    display: grid;
 }
 
 #navigation {
@@ -29,7 +42,11 @@ body {
 }
 
 #main-header h1 {
+    width: 80%;
+    margin: auto;
     color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #navbar {
@@ -38,14 +55,13 @@ body {
 }
 
 #navbar ul {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     list-style-type: none;
-    margin: 0;
     padding: 0;
     overflow: hidden;
-}
-
-li {
-    float: left;
 }
 
 #navbar li {
@@ -69,13 +85,16 @@ section:before,
 footer:before {
     content: "";
     display: block;
-    height: 110px;
+    height: 120px;
     /* fixed header height*/
-    margin: -110px 0 0;
+    margin: -120px 0 0;
     /* negative fixed header height */
 }
 
 .main {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
     margin-top: 150px;
 }
 
@@ -84,6 +103,54 @@ footer:before {
     color: white !important;
 }
 
+.vertical-box {
+    margin-top: 50px;
+    display: grid;
+    grid-template-areas: "picture motto";
+}
+
+#showcase {
+    margin-top: 50px;
+}
+
 #showcase h1 {
     font-size: 40px;
+}
+
+.picture {
+    grid-area: picture;
+    padding-top: 30px;
+}
+
+.motto {
+    grid-area: motto;
+}
+
+#offer h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.box-wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.box {
+    padding: 30px;
+    border: var(--green-color) 2px dashed;
+}
+
+.box p.info {
+    display: none;
+}
+
+section {
+    display: block;
+    margin: 20px 0;
+}
+
+#staff h1 {
+    font-size: 30px;
 }

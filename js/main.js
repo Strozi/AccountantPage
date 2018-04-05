@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
     toggleActive();
-
+    toggleInfo();
 });
 
 
@@ -19,3 +19,18 @@ function toggleActive() {
         });
     });
 };
+
+function toggleInfo() {
+    var button = document.querySelectorAll(".box a.btn");
+    button.forEach(element => {
+        element.addEventListener('click', e => {
+            e.preventDefault();
+            if (element.previousElementSibling.style.display === "") {
+                element.previousElementSibling.style.display = "block";
+            } else {
+                element.previousElementSibling.style.display = "";
+            }
+
+        });
+    });
+}
