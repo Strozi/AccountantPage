@@ -1,0 +1,7 @@
+
+refactor tab menu js from w3
+add propper content for footer
+social media fixed links on the side 
+modals for staff details
+Responsivenes
+

@@ -184,8 +184,8 @@ section {
 
 .tab {
     overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: var(--grey-color);
+    /* border: 1px solid #ccc; */
+    background-color: #ccc;
 }
 
 
@@ -195,6 +195,7 @@ section {
     background-color: inherit;
     float: left;
     border: none;
+    border-bottom: #ccc 4px solid;
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
@@ -211,8 +212,11 @@ section {
 
 /* Create an active/current tablink class */
 
-.tab button.active {
-    background-color: #ccc;
+.tab button.tab-active {
+    background-color: var(--grey-color);
+    color: var(--green-color);
+    font-weight: bold;
+    border-bottom-color: var(--green-color);
 }
 
 
@@ -224,4 +228,5 @@ section {
     background-color: var(--green-color);
     color: white;
     border-top: none;
+    height: 250px;
 }
