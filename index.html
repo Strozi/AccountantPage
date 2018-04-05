@@ -73,7 +73,7 @@
                 <div class="con">
                     <h1>Nasi Pracownicy</h1>
                     <div class="card-wrapper">
-                        <div class="card" data-bio="<p>Absolwentka kierunku Finanse i Rachunkowość na Uniwersytecie Ekonomicznym (dawnej Akademi Ekonomicznej) w Poznaniu. Specjalizuje się w bla bla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cumque cum porro commodi aliquam provident officia repudiandae numquam quaerat magnam.</p>
+                        <div class="card" id="basia" data-bio="<p>Absolwentka kierunku Finanse i Rachunkowość na Uniwersytecie Ekonomicznym (dawnej Akademi Ekonomicznej) w Poznaniu. Specjalizuje się w bla bla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cumque cum porro commodi aliquam provident officia repudiandae numquam quaerat magnam.</p>
                             <p>W czasie wolnym uwielbia biegać i czytać skandynawskie kryminaly</p>">
                             <img src="./resources/face1.jpg" alt="">
                             <h3>Pani Basia</h3>
@@ -90,9 +90,29 @@
             </section>
         </main>
         <footer id="contact">
-            Just a footer
-            <div>Icons made by <a href="https://www.flaticon.com/authors/mynamepong" title="mynamepong">mynamepong</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"
-                    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+            <div class="tab">
+                <button class="tablinks" id="defaultOpen" onclick="openTab(event, 'Kontakt')">Kontakt</button>
+                <button class="tablinks" onclick="openTab(event, 'Inne')">Inne</button>
+                <button class="tablinks" onclick="openTab(event, 'Informacje')">Informacje</button>
+            </div>
+
+            <div id="Kontakt" class="tabcontent">
+                <h3>Kontakt</h3>
+                <p>Adres etc</p>
+            </div>
+
+            <div id="Inne" class="tabcontent">
+                <h3>Inne</h3>
+                <p>Bla bla bla</p>
+                <div>Icons made by <a href="https://www.flaticon.com/authors/mynamepong" title="mynamepong">mynamepong</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"
+                        title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+            </div>
+
+            <div id="Informacje" class="tabcontent">
+                <h3>Dodatkowe informacje</h3>
+                <p>Termin skladania PIT 11 etc...</p>
+            </div>
+
         </footer>
     </div>
     <script type="text/javascript" src="./js/main.js" />
